@@ -19,7 +19,7 @@ fi
 readonly cmd="$1"
 shift
 
-readonly scripts_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+readonly scripts_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"/scripts
 
 case ${cmd} in
 	b|belongs)
