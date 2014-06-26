@@ -1,0 +1,44 @@
+#!/bin/bash
+
+
+usage () {
+	echo -e "Usage: `basename $0` <cmd> [<args>]"
+	echo -e "\nCommands:"
+	echo -e "\tb, belongs - list what package file belongs to"
+	echo -e "\ti, info    - show package information"
+	echo -e "\tf, files   - list all files installed by package"
+	echo -e "\tg, grep    - grep filename in packages"
+	echo -e "\tl, pkglist - list all packages"
+}
+
+if [ "$#" -lt 1 ] ; then
+	usage
+	exit 1
+fi
+
+readonly cmd="$1"
+shift
+
+readonly scripts_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+case ${cmd} in
+	b|belongs)
+		${SHELL} ${scripts_dir}/belongs.sh $@
+		;;
+	f|files)
+		${SHELL} ${scripts_dir}/files.sh $@
+		;;
+	i|info)
+		${SHELL} ${scripts_dir}/info.sh $@
+		;;
+	g|grep)
+		${SHELL} ${scripts_dir}/grep.sh $@
+		;;
+	l|pkglist)
+		${SHELL} ${scripts_dir}/pkglist.sh $@
+		;;
+	*)
+		usage
+		exit 1
+		;;
+esac
