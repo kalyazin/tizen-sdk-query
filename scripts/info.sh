@@ -17,4 +17,9 @@ fi
 
 readonly pn="$1"
 
+if ! grep "Package: ${pn}" ${info_dir}/${meta_list_file} >& /dev/null ; then
+        echo "No package with name '${pn}'" 1>&2
+        exit 1
+fi
+
 sed -n '/Package: '${pn}'/,/^$/p' ${info_dir}/${meta_list_file} | head -n -1
