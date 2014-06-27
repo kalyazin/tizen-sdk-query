@@ -17,4 +17,9 @@ fi
 
 readonly pn="$1"
 
+if [ ! -f "${pn}" ] ; then
+        echo "No package with name '${pn}'" 1>&2
+        exit 1
+fi
+
 cat ${info_dir}/${pn}/${pn}.list
