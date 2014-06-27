@@ -5,6 +5,7 @@ usage () {
 	echo -e "Usage: `basename $0` <cmd> [<args>]"
 	echo -e "\nCommands:"
 	echo -e "\tb, belongs - list what package file belongs to"
+	echo -e "\td, deps    - show package's install dependencies"
 	echo -e "\ti, info    - show package information"
 	echo -e "\tf, files   - list all files installed by package"
 	echo -e "\tg, grep    - grep filename in packages"
@@ -24,6 +25,9 @@ readonly scripts_dir="$( cd "$( dirname `readlink -f ${BASH_SOURCE[0]}` )" && pw
 case ${cmd} in
 	b|belongs)
 		${SHELL} ${scripts_dir}/belongs.sh $@
+		;;
+	d|deps)
+		${SHELL} ${scripts_dir}/deps.sh $@
 		;;
 	f|files)
 		${SHELL} ${scripts_dir}/files.sh $@
