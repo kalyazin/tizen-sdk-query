@@ -14,3 +14,13 @@ check_pkg () {
 		return 1
 	fi
 }
+
+get_deps () {
+	local _pn="$1"
+	sed -n '/Package: '${_pn}'/,/^$/p' ${info_dir}/${meta_list_file} \
+		| head -n -1 \
+		| awk -F ':' '/Install/{ print $2 }' \
+		| tr -d ' ' \
+		| awk -F '[, ]' '{ for (i=1; i<=NF; i++) print $i }' \
+		| sort
+}

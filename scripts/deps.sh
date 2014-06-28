@@ -20,9 +20,4 @@ if check_pkg ${pn} ; then
         exit 1
 fi
 
-sed -n '/Package: '${pn}'/,/^$/p' ${info_dir}/${meta_list_file} \
-        | head -n -1 \
-        | awk -F ':' '/Install/{ print $2 }' \
-        | tr -d ' ' \
-        | awk -F '[, ]' '{ for (i=1; i<=NF; i++) print $i }' \
-        | sort
+get_deps ${pn}
