@@ -22,7 +22,7 @@ get_deps () {
 		| head -n -1 \
 		| awk -F ':' '/Install/{ print $2 }' \
 		| tr -d ' ' \
-		| awk -F '[, ]' '{ for (i=1; i<=NF; i++) print $i }' \
+		| awk -F ',' '{ for (i=1; i<=NF; i++) print $i }' \
 		| sort
 }
 
