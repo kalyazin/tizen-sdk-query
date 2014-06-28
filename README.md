@@ -3,6 +3,7 @@ tizen-sdk-query
 
 Utilities for querying Tizen SDK packages
 - tsq belongs  - list what package file belongs to
+- tsq depends  - show depending packages
 - tsq info     - show package information
 - tsq depgraph - show package's install dependencies
 - tsq files    - list all files installed by package

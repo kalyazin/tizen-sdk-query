@@ -28,3 +28,18 @@ get_deps () {
 pkg_list () {
 	sed -n 's/^Package: \(.*\)*$/\1/p' ${info_dir}/${meta_list_file} | sort
 }
+
+depends () {
+	local _pn="$1"
+	local deps=""
+	for p in `pkg_list` ; do
+		if [ "${p}" != "${_pn}" ] ; then
+			local d=`get_deps ${p}`
+			if [[ ! -z "$d" \
+				&& ! -z `echo "$d" | grep ${_pn}` ]] ; then
+				deps+=" ${p}"
+			fi
+		fi
+	done
+	echo ${deps} | tr ' ' '\n' | sort -u
+}
