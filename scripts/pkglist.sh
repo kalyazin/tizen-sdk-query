@@ -13,4 +13,4 @@ if [ "$#" -ne 0 ] ; then
 	exit 1
 fi
 
-sed -n 's/^Package: \(.*\)*$/\1/p' ${info_dir}/${meta_list_file} | sort
+pkg_list

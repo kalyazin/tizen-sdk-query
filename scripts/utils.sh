@@ -24,3 +24,7 @@ get_deps () {
 		| awk -F '[, ]' '{ for (i=1; i<=NF; i++) print $i }' \
 		| sort
 }
+
+pkg_list () {
+	sed -n 's/^Package: \(.*\)*$/\1/p' ${info_dir}/${meta_list_file} | sort
+}
