@@ -41,5 +41,7 @@ depends () {
 			fi
 		fi
 	done
-	echo ${deps} | tr ' ' '\n' | sort -u
+	if [ ! -z "${deps}" ] ; then
+		echo ${deps} | tr ' ' '\n' | sort -u
+	fi
 }
