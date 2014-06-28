@@ -6,16 +6,6 @@ source ${tests_dir}/test_common.sh
 
 script=${scripts_dir}/pkglist.sh
 
-contains () {
-	local to_grep="$1"
-	local text=""
-	while read t ; do
-		text+=" ${t}"
-	done
-	echo ${text} | grep ${to_grep} 2>&1 > /dev/null
-	return $?
-}
-
 contains_inst_mgr () {
 	contains install-manager
 }
