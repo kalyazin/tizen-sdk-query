@@ -4,12 +4,12 @@
 usage () {
 	echo -e "Usage: `basename $0` <cmd> [<args>]"
 	echo -e "\nCommands:"
-	echo -e "\tb, belongs - list what package file belongs to"
-	echo -e "\td, deps    - show package's install dependencies"
-	echo -e "\ti, info    - show package information"
-	echo -e "\tf, files   - list all files installed by package"
-	echo -e "\tg, grep    - grep filename in packages"
-	echo -e "\tl, pkglist - list all packages"
+	echo -e "\tb, belongs  - list what package file belongs to"
+	echo -e "\ti, info     - show package information"
+	echo -e "\tg, depgraph - show package's install dependencies"
+	echo -e "\tf, files    - list all files installed by package"
+	echo -e "\tg, grep     - grep filename in packages"
+	echo -e "\tl, pkglist  - list all packages"
 }
 
 if [ "$#" -lt 1 ] ; then
@@ -26,11 +26,11 @@ case ${cmd} in
 	b|belongs)
 		${SHELL} ${scripts_dir}/belongs.sh $@
 		;;
-	d|deps)
-		${SHELL} ${scripts_dir}/deps.sh $@
-		;;
 	f|files)
 		${SHELL} ${scripts_dir}/files.sh $@
+		;;
+	g|depgraph)
+		${SHELL} ${scripts_dir}/depgraph.sh $@
 		;;
 	i|info)
 		${SHELL} ${scripts_dir}/info.sh $@
