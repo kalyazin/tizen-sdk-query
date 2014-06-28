@@ -10,8 +10,8 @@ usage () {
 	echo -e "\ti, info     - show package information"
 	echo -e "\tg, depgraph - show package's install dependencies"
 	echo -e "\tf, files    - list all files installed by package"
-	echo -e "\tg, grep     - grep filename in packages"
 	echo -e "\tl, pkglist  - list all packages"
+	echo -e "\tr, grep     - grep filename in packages"
 }
 
 if [ "$#" -lt 1 ] ; then
@@ -40,11 +40,11 @@ case ${cmd} in
 	i|info)
 		${SHELL} ${scripts_dir}/info.sh $@
 		;;
-	g|grep)
-		${SHELL} ${scripts_dir}/grep.sh $@
-		;;
 	l|pkglist)
 		${SHELL} ${scripts_dir}/pkglist.sh $@
+		;;
+	r|grep)
+		${SHELL} ${scripts_dir}/grep.sh $@
 		;;
 	*)
 		usage
