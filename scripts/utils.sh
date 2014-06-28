@@ -9,7 +9,7 @@ readonly meta_list_file=installedpackage.list
 
 check_pkg () {
 	local _pn="$1"
-	if ! grep "Package: ${_pn}" ${info_dir}/${meta_list_file} >& /dev/null ; then
+	if ! grep '^Package: '"${_pn}"'$' ${info_dir}/${meta_list_file} >& /dev/null ; then
 		return 0
 	else
 		return 1
@@ -37,7 +37,7 @@ depends () {
 		if [ "${p}" != "${_pn}" ] ; then
 			local d=`get_deps ${p}`
 			if [[ ! -z "$d" \
-				&& ! -z `echo "$d" | grep ${_pn}` ]] ; then
+				&& ! -z `echo "$d" | grep ^${_pn}\$` ]] ; then
 				deps+=" ${p}"
 			fi
 		fi
