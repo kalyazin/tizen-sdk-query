@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 
 readonly scripts_dir="$( cd "$( dirname `readlink -f ${BASH_SOURCE[0]}` )" && pwd )"
 source ${scripts_dir}/utils.sh
