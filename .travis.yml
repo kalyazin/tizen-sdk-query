@@ -1,0 +1,3 @@
+language: bash
+script:
+  - FAKE_SDK=./tests/fixtures bash ./tests/run_tests.sh
