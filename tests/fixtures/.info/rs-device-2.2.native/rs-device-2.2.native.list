@@ -1,0 +1,11 @@
+platforms/
+platforms/tizen2.2/
+platforms/tizen2.2/rootstraps/
+platforms/tizen2.2/rootstraps/info/
+platforms/tizen2.2/rootstraps/info/tizen-device-2.2.native.dev.xml
+platforms/tizen2.2/rootstraps/tizen-device-2.2.native.zip
+tools/
+tools/smart-build-interface/
+tools/smart-build-interface/plugins/
+tools/smart-build-interface/plugins/tizen-device-2.2.native.xml
+tools/smart-build-interface/plugins/tizen-device-2.2.native.llvm.xml

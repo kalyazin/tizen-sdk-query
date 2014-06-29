@@ -1,0 +1,5 @@
+tools/
+tools/smart-build-interface/
+tools/smart-build-interface/plugins/
+tools/smart-build-interface/plugins/scripts/
+tools/smart-build-interface/plugins/scripts/tpk_packager

@@ -1,0 +1,12 @@
+tools/
+tools/emulator/
+tools/emulator/data/
+tools/emulator/data/bios/
+tools/emulator/data/bios/linuxboot.bin
+tools/emulator/data/bios/pxe-virtio.rom
+tools/emulator/data/bios/bios.bin
+tools/emulator/bin/
+tools/emulator/bin/emulator-x86
+tools/emulator/etc/
+tools/emulator/etc/45-tizen-kvm.rules
+tools/emulator/etc/tizen-kvm

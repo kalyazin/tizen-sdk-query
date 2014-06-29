@@ -1,0 +1,480 @@
+Package: sdb
+Version: 2.2.31
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Kangho Kim <kh5325.kim@samsung.com>, Yoonki Park<yoonki.park@samsung.com>, Hyunsik Noh<hyunsik.noh@samsung.com>, Gun Kim<gune.kim@samsung.com>, Ho Namkoong<ho.namkoong@samsung.com>, Taeyoung Son<taeyoung2.son@samsung.com>
+Path: /binary/sdb_2.2.31_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: bda2bfa7d3c8e3857c019f63b28b2f0af94ae7c0c7ce4426e42972d396910f77
+Size: 167206
+Uncompressed-size: 475136
+Description: Smart Development Bridge for device management
+
+Package: web-ui-fw
+Version: 0.2.69
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: kangho kim <kh5325.kim@samsung.com>, hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song<jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, bonyong lee <bonyong.lee@samsung.com> youmin ha <youmin.ha@samsung.com>, jinhyuk jun <jinhyuk.jun@samsung.com>, hyunjung kim <hjnim.kim@samsung.com>, hyeoncheol choi <hc7.choi@samsung.com>, heeju joo <heeju.joo@samsung.com>
+Path: /binary/web-ui-fw_0.2.69_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 81a0eb6b9170084494075a5949da8c6c674308689b85cd24700eba3afbbad270
+Size: 2020329
+Uncompressed-size: 7012352
+Description: Tizen Web UI FW
+
+Package: web-cli
+Version: 2.1.74
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Bon-Yong Lee<bonyong.lee@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>
+Install-dependency: sdb [ ubuntu-64 ], web-ui-fw [ ubuntu-64 ]
+Build-dependency: webapp-eplugin [ ubuntu-64 ], base-ide-product [ ubuntu-64 ], common-eplugin [ ubuntu-64 ], nativecommon-eplugin [ ubuntu-64 ], nativecpp-ext-eplugin [ ubuntu-64 ]
+Path: /binary/web-cli_2.1.74_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 9064d2eb48205a00a45d03b75a22fc27a049ef509a2fb2fd6bd9a2027b29e9be
+Size: 40895196
+Uncompressed-size: 43458560
+Description: Tizen IDE Command Line Interface
+
+Package: certificate-generator
+Version: 0.0.41
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: JungHak Kim <kjh5@samsung.com >
+Path: /binary/certificate-generator_0.0.41_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 59baabf3c929494f8ba174970d4c404c255209d347003af62070b20fa79c2a05
+Size: 2372380
+Uncompressed-size: 2904064
+Description: Certificate manager
+
+Package: tizen-web-cli
+Label: Command Line Tools
+Version: 2.1.8
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Kangho Kim <kh5325.kim@samsung.com>, Hyeongseok Heo <hyeongseok.heo@samsung.com>, Bonyong Lee <bonyong.lee@samsung.com>, Yoonki Park <yoonki.park@samsung.com>, Hyunsik Noh <hyunsik.noh@samsung.com>, Gun Kim <gune.kim@samsung.com>, Ho Namkoong <ho.namkoong@samsung.com>, Taeyoung Son <taeyoung2.son@samsung.com>, Changhyun Lee <changhyun1.lee@samsung.com>, Gyeongseok Seo <gyeongseok.seo@samsung.com>, Jihoon Song <jihoon80.song@samsung.com>
+Attribute: root
+Install-dependency: web-cli, certificate-generator
+Path: /binary/tizen-web-cli_2.1.8_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 7ed8c567b792dcc6fc663a0cef31404c17e6ccfc37d9ea63d46fe61ad8edfb3c
+Size: 1255
+Uncompressed-size: 8192
+Description: Command Line Tools are specific console scripts to provide commands, such as project packaging, signing and installation.
+
+Package: websimulator-core
+Version: 2.0.28
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song <jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, bonyong lee <bonyong.lee@samsung.com>
+Path: /binary/websimulator-core_2.0.28_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 8f0f4c4b7a1776de37f868887361bc1a3371df0231793989ed4b0f95bf5afe81
+Size: 2629768
+Uncompressed-size: 8294400
+Description: Web Simulator Plugin
+
+Package: tizen-websimulator-core
+Label: Web Simulator
+Version: 2.1.8
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Kangho Kim <kh5325.kim@samsung.com>, Hyeongseok Heo <hyeongseok.heo@samsung.com>, Bonyong Lee <bonyong.lee@samsung.com>, Yoonki Park <yoonki.park@samsung.com>, Hyunsik Noh <hyunsik.noh@samsung.com>, Gun Kim <gune.kim@samsung.com>, Ho Namkoong <ho.namkoong@samsung.com>, Taeyoung Son <taeyoung2.son@samsung.com>, Changhyun Lee <changhyun1.lee@samsung.com>, Gyeongseok Seo <gyeongseok.seo@samsung.com>, Jihoon Song <jihoon80.song@samsung.com>
+Attribute: root
+Install-dependency: websimulator-core
+Path: /binary/tizen-websimulator-core_2.1.8_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 8a2d6f788486d676fa9d933114c84a3a2e3d7d2dc36a75440c671851fb25e9d2
+Size: 1235
+Uncompressed-size: 8192
+Description: The Web Simulator is a lightweight tool to simulate mobile web environment.
+
+Package: sbi-toolchain-scripts
+Version: 1.0.18
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Path: /binary/sbi-toolchain-scripts_1.0.18_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 74f8815823c6a5b38cc8a60e19e3e55eb7659ad8f90028f6dfa0ce9bb78914cf
+Size: 3232
+Description: sbi toolchain scripts (ex : tpk_packager
+
+Package: cross-arm-gdb-7.5
+Version: 2.1.10
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Build-dependency: cross-arm-gcc-4.5 [ ubuntu-64 ], rs-device-2.2.devel [ ubuntu-32 ]
+Source-dependency: gdb-linaro-7.5-2012.12-1.tar.bz2
+Conflicts: cross-arm-gdb-7.2
+Path: /binary/cross-arm-gdb-7.5_2.1.10_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: b0bd689d141bb86561715de5946c98c75e7a36eb0ece561fd51d125b7bd15c64
+Size: 13094926
+Uncompressed-size: 34586624
+Description: GNU debug tool 7.5 for Tizen SDK
+
+Package: cross-i386-gcc-4.5
+Version: 1.0.9
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Build-dependency: rs-emulator-2.2.devel [ ubuntu-32 ]
+Source-dependency: gcc-linaro-4.5-2012.01.tar.bz2, binutils-2.22.tar.gz, gmp-5.0.1.tar.gz, mpc-0.9.tar.gz, mpfr-3.0.1.tar.gz
+Path: /binary/cross-i386-gcc-4.5_1.0.9_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 6b5a8fc6e26949419884130065620b272485377f39dd876203066b93709bb8a2
+Size: 76586593
+Uncompressed-size: 198782976
+Description: gnu compiler 4.5 for Tizen SDK
+
+Package: cross-arm-gcc-4.5
+Version: 1.0.9
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Build-dependency: rs-device-2.2.devel [ ubuntu-32 ]
+Source-dependency: gcc-linaro-4.5-2012.01.tar.bz2, binutils-2.22.tar.gz, gmp-5.0.1.tar.gz, mpc-0.9.tar.gz, mpfr-3.0.1.tar.gz
+Path: /binary/cross-arm-gcc-4.5_1.0.9_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: f37e6097ab06df843b0c6a248fb0bb6836ec1194e94d669b5cfd28e240bac30c
+Size: 72834651
+Uncompressed-size: 194748416
+Description: gnu compiler 4.5 for Tizen SDK
+
+Package: llvm-3.1
+Version: 1.0.46
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Attribute: binary
+Install-dependency: cross-arm-gcc-4.5, cross-i386-gcc-4.5
+Path: /binary/llvm-3.1_1.0.46_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: a378a3e9d60865816485b0912e952800ed4d585e956c2290c641ca29adbaab70
+Size: 36169509
+Uncompressed-size: 96374784
+Description: llvm compiler 3.1 for Tizen SDK
+
+Package: cross-i386-gdb-7.5
+Version: 2.1.10
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Build-dependency: cross-i386-gcc-4.5 [ ubuntu-64 ], rs-emulator-2.2.devel [ ubuntu-32 ]
+Source-dependency: gdb-linaro-7.5-2012.12-1.tar.bz2
+Conflicts: cross-i386-gdb-7.2
+Path: /binary/cross-i386-gdb-7.5_2.1.10_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 523da3c14b3e231de6b9f48ba68fe24cd9302616addc37f245ae6c9d1b41a6f0
+Size: 11426405
+Uncompressed-size: 29937664
+Description: GNU debug tool 7.5 for Tizen SDK
+
+Package: sbi-toolchain-llvm-3.1.cpp.app
+Version: 2.1.23
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Install-dependency: llvm-3.1, cross-arm-gdb-7.5, cross-i386-gdb-7.5, sbi-toolchain-scripts
+Path: /binary/sbi-toolchain-llvm-3.1.cpp.app_2.1.23_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: fb6742a724aba8f4ddd3b1fbcc1cea2544fc87a0081b35bf374bbf5225ede880
+Size: 18107
+Uncompressed-size: 98304
+Description: sbi llvm toolchain plugin for cpp project
+
+Package: sbi-toolchain-gcc-4.5.cpp.app
+Version: 2.1.23
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Install-dependency: cross-arm-gcc-4.5, cross-i386-gcc-4.5, cross-arm-gdb-7.5, cross-i386-gdb-7.5, sbi-toolchain-scripts
+Path: /binary/sbi-toolchain-gcc-4.5.cpp.app_2.1.23_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 0e3f52328ada67a0741842cc3755e0507c50d0e89595b8a81912c1b97261ff27
+Size: 12020
+Uncompressed-size: 53248
+Description: sbi gcc toolchain plugin for cpp project
+
+Package: smart-build-interface
+Version: 1.3.9
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Path: /binary/smart-build-interface_1.3.9_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: acafcc0d1d486a107d645f829bd4d3747c1b70616488b2e3626e859822c827e9
+Size: 193639
+Uncompressed-size: 659456
+Description: smart build interface for Tizen SDK
+
+Package: tizen-native-toolchain
+Label: Toolchain
+Version: 1.1.3
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>, Kim Sungmin <dev.sungmin.kim@samsung.com>
+Attribute: root
+Install-dependency: smart-build-interface, sbi-toolchain-gcc-4.5.cpp.app, sbi-toolchain-llvm-3.1.cpp.app
+Path: /binary/tizen-native-toolchain_1.1.3_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 9c8523b1844efde38619a5f636378cd4d4c5c90b4b701bc3a5b165df508635ac
+Size: 899
+Uncompressed-size: 8192
+Description: Toolchain provides various tools to build and debug native projects. It includes smart build interface, GCC, GDB, and LLVM.
+
+Package: native-cli
+Version: 2.1.74
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Bon-Yong Lee<bonyong.lee@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>
+Install-dependency: sdb [ ubuntu-64 ]
+Build-dependency: nativecommon-eplugin [ ubuntu-64 ], base-ide-product [ ubuntu-64 ], common-eplugin [ ubuntu-64 ], nativecpp-ext-eplugin [ ubuntu-64 ]
+Path: /binary/native-cli_2.1.74_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 584a396e3abc78c621fecc525052d8043254ea6b88cc3ed2fafeeb75a2d59229
+Size: 16544687
+Uncompressed-size: 17534976
+Description: Tizen IDE Command Line Interface
+
+Package: tizen-native-cli
+Label: Command Line Tools
+Version: 2.1.8
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Kangho Kim <kh5325.kim@samsung.com>, Hyeongseok Heo <hyeongseok.heo@samsung.com>, Bonyong Lee <bonyong.lee@samsung.com>, Yoonki Park <yoonki.park@samsung.com>, Hyunsik Noh <hyunsik.noh@samsung.com>, Gun Kim <gune.kim@samsung.com>, Ho Namkoong <ho.namkoong@samsung.com>, Taeyoung Son <taeyoung2.son@samsung.com>, Changhyun Lee <changhyun1.lee@samsung.com>, Gyeongseok Seo <gyeongseok.seo@samsung.com>, Jihoon Song <jihoon80.song@samsung.com>
+Attribute: root
+Install-dependency: native-cli
+Path: /binary/tizen-native-cli_2.1.8_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 9058803a54d88a3f32737ae18fbb8781f12a397490f4a233e97b448e437dbedb
+Size: 1252
+Uncompressed-size: 8192
+Description: Command Line Tools are specific console scripts to provide commands, such as project packaging, signing and installation.
+
+Package: native-sample-2.2
+Version: 1.0.650
+OS: ubuntu-64
+Build-host-os: opensuse-32, ubuntu-64, opensuse-64
+Maintainer: kangho kim <kh5325.kim@samsung.com>, yoonki park <yoonki.park@samsung.com>, hyunsik non <hyunsik.noh@samsung.com>, taeyoung son <taeyoung2.son@samsung.com>, gune Kim <gune.kim@samsung.com>, ho namkoong <ho.namkoong@samsung.com>, hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song <jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, bonyong lee <bonyong.lee@samsung.com>
+Conflicts: native-cpp-sample, native-sample-2.1
+Path: /binary/native-sample-2.2_1.0.650_ubuntu-64.zip
+Origin: local
+SHA256: ca16d675d9bf9f41e0d9900f243b2cd0251c38a5ea71362b7902222eb5b44aad
+Size: 74397379
+Uncompressed-size: 117514240
+Description: Native sample templates.
+
+Package: tizen-2.2-native-sample
+Label: Native Samples
+Version: 2.1.8
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Kangho Kim <kh5325.kim@samsung.com>, Hyeongseok Heo <hyeongseok.heo@samsung.com>, Bonyong Lee <bonyong.lee@samsung.com>, Yoonki Park <yoonki.park@samsung.com>, Hyunsik Noh <hyunsik.noh@samsung.com>, Gun Kim <gune.kim@samsung.com>, Ho Namkoong <ho.namkoong@samsung.com>, Taeyoung Son <taeyoung2.son@samsung.com>, Changhyun Lee <changhyun1.lee@samsung.com>, Gyeongseok Seo <gyeongseok.seo@samsung.com>, Jihoon Song <jihoon80.song@samsung.com>
+Attribute: root
+Install-dependency: native-sample-2.2
+Conflicts: tizen-2.0-native-sample, tizen-2.1-native-sample
+Path: /binary/tizen-2.2-native-sample_2.1.8_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 3c4c4573c42604d3c581c9c07450ce8ba7a1db891eae4ab441abd9c6580777f5
+Size: 1222
+Uncompressed-size: 8192
+Description: Native samples for Tizen 2.X platform
+
+Package: api-checker
+Version: 1.0.106
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: JinMook Lim<jinmook.lim@samsung.com>, JongHwan2.park <Jonghwan2.park@samsung.com>
+Attribute: binary
+Path: /binary/api-checker_1.0.106_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 7eded1de1773fe1a87bf1428d35bece4034efff17197d3015d3518f4b2c1bd0e
+Size: 193891
+Uncompressed-size: 4145152
+Description: API & Prvilege Checker
+
+Package: rs-emulator-2.2.native
+Version: 1.1.628
+OS: ubuntu-64
+Build-host-os: opensuse-32, ubuntu-64, opensuse-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Attribute: binary
+Conflicts: rs-emulator-2.0.cpp, rs-emulator-2.1.cpp
+Path: /binary/rs-emulator-2.2.native_1.1.628_ubuntu-64.zip
+Origin: local
+SHA256: 89b6732e9c1b451dfbb4653bf53235af28a2791b9cc278f7341d996a98b73c86
+Size: 65050706
+Uncompressed-size: 65093632
+Description: I386 rootstrap for app development
+
+Package: rs-device-2.2.native
+Version: 1.1.628
+OS: ubuntu-64
+Build-host-os: opensuse-32, ubuntu-64, opensuse-64
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>
+Attribute: binary
+Conflicts: rs-device-2.0.cpp, rs-device-2.1.cpp
+Path: /binary/rs-device-2.2.native_1.1.628_ubuntu-64.zip
+Origin: local
+SHA256: 206c83d7b6334c833596ab15635b2b90a24e09d3bba0f75385c35acf4c75c647
+Size: 61935688
+Uncompressed-size: 61980672
+Description: ARM rootstrap for app development
+
+Package: tizen-2.2-rootstrap
+Label: Native Rootstrap
+Version: 1.1.3
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Taejun Ha <taejun.ha@samsung.com>, Jiil Hyoun <jiil.hyoun@samsung.com>, Donghyuk Yang <donghyuk.yang@samsung.com>, Donghee Yang<donghee.yang@samsung.com>, Kim Sungmin <dev.sungmin.kim@samsung.com>
+Attribute: public
+Install-dependency: rs-device-2.2.native, rs-emulator-2.2.native, api-checker, certificate-generator
+Conflicts: tizen-2.0-rootstrap, tizen-2.1-rootstrap
+Path: /binary/tizen-2.2-rootstrap_1.1.3_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 13a27adf09ca5848ee6a971e62ee35e3b9f95d538e5a1b92d4a19f44b1ddeb30
+Size: 934
+Uncompressed-size: 8192
+Description: Native rootstrap(or sysroot) includes header files and libraries to build/debug native application projects.
+
+Package: base-ide-product
+Version: 2.2.6
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: kangho kim <kh5325.kim@samsung.com>, yoonki park <yoonki.park@samsung.com>, hyunsik non <hyunsik.noh@samsung.com>, taeyoung son <taeyoung2.son@samsung.com>, gune Kim <gune.kim@samsung.com>, ho namkoong <ho.namkoong@samsung.com>, hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song<jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, Woongsik Choi <woongsik76.choi@samsung.com>, Hyukmin Kwon <hyukmin0530.kwon@samsung.com>, Wooyoung Cho <wooyoung1.cho@samsung.com>, Jaeheung Kim <jaeheung.kim@samsung.com>
+Build-dependency: indigo-pde [ ubuntu-64 ]
+Path: /binary/base-ide-product_2.2.6_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 4433d61ecfc6bb1de0f0c5b7b79387e514e9a78f7316b7365b2656947484ad87
+Size: 265353344
+Uncompressed-size: 303853568
+Description: Make base IDE. This also includes patched eclipse plugins.
+
+Package: common-eplugin
+Version: 2.2.24
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: kangho kim <kh5325.kim@samsung.com>, yoonki park <yoonki.park@samsung.com>, hyunsik non <hyunsik.noh@samsung.com>, taeyoung son <taeyoung2.son@samsung.com>, gune Kim <gune.kim@samsung.com>, ho namkoong <ho.namkoong@samsung.com>, hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song <jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, bonyong lee <bonyong.lee@samsung.com>, shingil kang <shingil.kang@samsung.com>
+Install-dependency: base-ide-product [ ubuntu-64 ]
+Build-dependency: base-ide-product [ ubuntu-64 ], pde-build [ ubuntu-64 ]
+Path: /binary/common-eplugin_2.2.24_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 400dd36da5385a429c2257500a41aa53a716f1c788a0ea06716fa387c0dd5e48
+Size: 13515878
+Uncompressed-size: 13774848
+Description: Common plugin
+
+Package: webapp-eplugin
+Version: 2.2.29
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: kangho kim <kh5325.kim@samsung.com>, hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song<jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, bonyong lee <bonyong.lee@samsung.com>
+Install-dependency: base-ide-product [ ubuntu-64 ], common-eplugin [ ubuntu-64 ], web-ui-fw [ ubuntu-64 ]
+Build-dependency: base-ide-product [ ubuntu-64 ], pde-build [ ubuntu-64 ], common-eplugin [ ubuntu-64 ]
+Path: /binary/webapp-eplugin_2.2.29_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 50aa71011ee5c0c4d236cdf11445c9e46e1c51ada7b017bbcd056a4d729c51c2
+Size: 23129599
+Uncompressed-size: 24457216
+Description: Tizen Web IDE
+
+Package: web-sample-2.2
+Version: 2.2.156
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Piotr Dabrowski <p.dabrowski2@samsung.com>, Piotr Wronski <p.wronski@samsung.com>, Grzegorz Grzesiak <g.grzesiak@samsung.com>, Seoghyun Kang <sh0708.kang@samsung.com>, geunsun lee <gs86.lee@samsung.com>, Hyuk Ji <ji.ji@samsung.com>, kangho kim <kh5325.kim@samsung.com>, hyeongseok heo <hyeong-seok.heo@samsung.com>, gyeongseok seo <gyeongseok.seo@samsung.com>, jihoon song<jihoon80.song@samsung.com>, changhyun lee <changhyun1.lee@samsung.com>, bonyong lee <bonyong.lee@samsung.com>
+Install-dependency: base-ide-product [ ubuntu-64 ], common-eplugin [ ubuntu-64 ], webapp-eplugin [ ubuntu-64 ]
+Build-dependency: pde-build [ ubuntu-64 ], base-ide-product [ ubuntu-64 ], common-eplugin [ ubuntu-64 ], webapp-eplugin [ ubuntu-64 ]
+Conflicts: web-sample-2.1
+Path: /binary/web-sample-2.2_2.2.156_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: b55df3869c9b1a71d0303ebae5a543d560d46460903083ca5c1bfdc56289f844
+Size: 11042456
+Uncompressed-size: 16805888
+Description: Tizen Web App Sample
+
+Package: tizen-2.2-web-sample
+Label: Web Samples
+Version: 2.1.8
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Kangho Kim <kh5325.kim@samsung.com>, Hyeongseok Heo <hyeongseok.heo@samsung.com>, Bonyong Lee <bonyong.lee@samsung.com>, Yoonki Park <yoonki.park@samsung.com>, Hyunsik Noh <hyunsik.noh@samsung.com>, Gun Kim <gune.kim@samsung.com>, Ho Namkoong <ho.namkoong@samsung.com>, Taeyoung Son <taeyoung2.son@samsung.com>, Changhyun Lee <changhyun1.lee@samsung.com>, Gyeongseok Seo <gyeongseok.seo@samsung.com>, Jihoon Song <jihoon80.song@samsung.com>
+Attribute: root
+Install-dependency: web-sample-2.2
+Conflicts: tizen-2.0-web-sample, tizen-2.1-web-sample
+Path: /binary/tizen-2.2-web-sample_2.1.8_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: b195c76f1f10246b00bc88de8d76283c3f43c4c65ebe41ef22b0bbc917d4a52a
+Size: 1209
+Uncompressed-size: 8192
+Description: Web samples
+
+Package: document
+Version: 1.20.740
+OS: ubuntu-64
+Build-host-os: opensuse-32, ubuntu-64, opensuse-64
+Maintainer: Shingil Kang <shingil.kang@samsung.com>, Sungho Park <chywoo.park@samsung.com>
+Path: /binary/document_1.20.740_ubuntu-64.zip
+Origin: local
+SHA256: d59e79fa322076621e049df49989064c2192eadf9cc94b1683a98de44f3d79cb
+Size: 72420419
+Uncompressed-size: 74022912
+Description: Document
+
+Package: tizen-document
+Label: Documents
+Version: 2.1.0
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Sungho Park <chywoo.park@samsung.com>, Shingil Kang<shingil.kang@samsung.com>
+Attribute: public
+Install-dependency: document, certificate-generator
+Path: /binary/tizen-document_2.1.0_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 1e86c8bc505285c2706ab68921b7d35f9f580c3ee3dea16210d87e34e461c94b
+Size: 744
+Uncompressed-size: 8192
+Description: Tizen documents provides Tizen Web/Native/Platform developer guide, API reference, and other useful information.
+
+Package: sdk-info
+Version: 2.2.4
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Jinsil Lee <js96.lee@samsung.com>, Sungho Park <chywoo.park@samsung.com>
+Path: /binary/sdk-info_2.2.4_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 2b610815160858c62a91eebab58a40b5c4e627bac6155c42a65d40724eeacba3
+Size: 866854
+Uncompressed-size: 1175552
+Description: Release note, License
+
+Package: install-manager
+Version: 2.2.71
+OS: ubuntu-64
+Build-host-os: ubuntu-64
+Maintainer: Shihyun Kim<shihyun.kim@samsung.com>, Yongsung Kim<yongsung1.kim@samsung.com>
+Path: /binary/install-manager_2.2.71_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: 4c010b9f453db0af77acdf58387f2b6e62b00b00772f318c16c18479c62cf7d1
+Size: 8284201
+Uncompressed-size: 8364032
+Description: InstallManager
+
+Package: ESSENTIAL-COMPONENT
+Version: 2.2.1
+OS: ubuntu-64
+Build-host-os: ubuntu-32
+Maintainer: Sungho Park <chywoo.park@samsung.com>, Donghoon Hyun <donghoon79.hyun@samsung.com>, YongHwan Jeon <yonghwan82.jeon@samsung.com>
+Attribute: mandatory
+Install-dependency: sdk-info, sdb, install-manager
+Path: /binary/ESSENTIAL-COMPONENT_2.2.1_ubuntu-64.zip
+Origin: http://121.133.176.49/packages/tizen_2.2
+SHA256: c66f8b2d48be1dd5d4cc4188801a03eac2df3db79685bd440ba95c4864961877
+Size: 1037
+Uncompressed-size: 8192
+C-Order: 
+

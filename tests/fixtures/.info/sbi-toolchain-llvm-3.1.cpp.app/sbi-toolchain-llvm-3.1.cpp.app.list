@@ -1,0 +1,11 @@
+tools/
+tools/smart-build-interface/
+tools/smart-build-interface/plugins/
+tools/smart-build-interface/plugins/llvm31p.armel.cpp.app.xml
+tools/smart-build-interface/plugins/llvm31.i386.cpp.sharedLib.xml
+tools/smart-build-interface/plugins/llvm31p.i386.cpp.app.xml
+tools/smart-build-interface/plugins/llvm31.armel.cpp.app.xml
+tools/smart-build-interface/plugins/llvm31.armel.cpp.staticLib.xml
+tools/smart-build-interface/plugins/llvm31.i386.cpp.staticLib.xml
+tools/smart-build-interface/plugins/llvm31.armel.cpp.sharedLib.xml
+tools/smart-build-interface/plugins/llvm31.i386.cpp.app.xml

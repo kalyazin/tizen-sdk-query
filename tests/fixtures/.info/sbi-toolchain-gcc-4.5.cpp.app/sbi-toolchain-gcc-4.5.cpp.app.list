@@ -1,0 +1,9 @@
+tools/
+tools/smart-build-interface/
+tools/smart-build-interface/plugins/
+tools/smart-build-interface/plugins/gcc45.armel.cpp.sharedLib.xml
+tools/smart-build-interface/plugins/gcc45.i386.cpp.sharedLib.xml
+tools/smart-build-interface/plugins/gcc45.armel.cpp.staticLib.xml
+tools/smart-build-interface/plugins/gcc45.armel.cpp.app.xml
+tools/smart-build-interface/plugins/gcc45.i386.cpp.staticLib.xml
+tools/smart-build-interface/plugins/gcc45.i386.cpp.app.xml

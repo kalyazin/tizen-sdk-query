@@ -1,0 +1,11 @@
+platforms/
+platforms/tizen2.2/
+platforms/tizen2.2/rootstraps/
+platforms/tizen2.2/rootstraps/tizen-emulator-2.2.native.zip
+platforms/tizen2.2/rootstraps/info/
+platforms/tizen2.2/rootstraps/info/tizen-emulator-2.2.native.dev.xml
+tools/
+tools/smart-build-interface/
+tools/smart-build-interface/plugins/
+tools/smart-build-interface/plugins/tizen-emulator-2.2.native.llvm.xml
+tools/smart-build-interface/plugins/tizen-emulator-2.2.native.xml
