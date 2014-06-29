@@ -1,6 +1,8 @@
 tizen-sdk-query
 ===============
 
+[![Build Status](https://travis-ci.org/kalyazin/tizen-sdk-query.svg?branch=master)](https://travis-ci.org/kalyazin/tizen-sdk-query)
+
 Utilities for querying Tizen SDK packages
 - tsq belongs  - list what package file belongs to
 - tsq depends  - show depending packages
