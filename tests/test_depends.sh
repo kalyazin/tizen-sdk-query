@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 readonly tests_dir="$( cd "$( dirname `readlink -f ${BASH_SOURCE[0]}` )" && pwd )"
 readonly scripts_dir=${tests_dir}/../scripts
 source ${tests_dir}/test_common.sh
