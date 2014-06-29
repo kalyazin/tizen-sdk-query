@@ -12,6 +12,7 @@ usage () {
 	echo -e "\tf, files    - list all files installed by package"
 	echo -e "\tl, pkglist  - list all packages"
 	echo -e "\tr, grep     - grep filename in packages"
+	echo -e "\tt, tree     - show package dependency tree"
 }
 
 if [ "$#" -lt 1 ] ; then

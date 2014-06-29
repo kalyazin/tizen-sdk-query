@@ -11,6 +11,7 @@ Utilities for querying Tizen SDK packages
 - tsq files    - list all files installed by package
 - tsq pkglist  - list all packages
 - tsq grep     - grep filename in packages
+- tsq tree     - show package dependency tree
 
 You need to have [Tizen SDK 2.2.1](https://developer.tizen.org/downloads/tizen-sdk) installed to use the utilities.
 For test run use FAKE_SDK env variable pointing to ./tests/fixtures.
