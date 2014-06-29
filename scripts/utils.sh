@@ -3,7 +3,11 @@
 set -e
 
 readonly sdk_info_file=${HOME}/tizen-sdk/sdk.info
-readonly tizen_sdk_dir=`sed -ne 's$TIZEN_SDK_INSTALLED_PATH=\(.*\)$\1$p' ${sdk_info_file}`
+if [ ! -z "${FAKE_SDK}" ] ; then
+	readonly tizen_sdk_dir=${FAKE_SDK}
+else
+	readonly tizen_sdk_dir=`sed -ne 's$TIZEN_SDK_INSTALLED_PATH=\(.*\)$\1$p' ${sdk_info_file}`
+fi
 readonly info_dir=${tizen_sdk_dir}/.info
 readonly meta_list_file=installedpackage.list
 
