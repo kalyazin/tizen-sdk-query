@@ -47,6 +47,9 @@ case ${cmd} in
 	r|grep)
 		${SHELL} ${scripts_dir}/grep.sh $@
 		;;
+	t|tree)
+		${SHELL} ${scripts_dir}/tree.sh $@
+		;;
 	*)
 		usage
 		exit 1
